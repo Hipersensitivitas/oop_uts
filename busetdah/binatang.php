@@ -64,12 +64,12 @@ class Kucing extends Hewan {
     private $warna;
 
     public function __construct($nama, $tinggi, $berat, $warna, $suara = "Meong") {
-        parent::__construct($nama, $tinggi, $berat, $suara); // Memanggil konstruktor parent
+        parent::__construct($nama, $tinggi, $berat, $suara); 
         $this->warna = $warna;
     }
 
     public function tambahTinggi($cm) {
-        $this->tinggi += $cm; // Menambah tinggi kucing
+        $this->tinggi += $cm; //tambah tinggi kucing
     }
 
     public function getWarna() {
@@ -85,7 +85,7 @@ class Kucing extends Hewan {
     }
 }
 
-// Contoh penggunaan
+
 $anjing = new Anjing("Rex", 50, 20, "Bulldog");
 echo "Anjing: <br>";
 echo "Nama: " . $anjing->getNama() . "<br>";
@@ -94,7 +94,7 @@ echo "Berat: " . $anjing->getBerat() . " kg<br>";
 echo "Suara: " . $anjing->getSuara() . "<br>";
 echo "Jenis: " . $anjing->getJenis() . "<br><br>";
 
-$anjing->tambahBerat(2); // Menambah berat anjing
+$anjing->tambahBerat(2); 
 echo "Setelah menambah berat: <br>";
 echo "Berat: " . $anjing->getBerat() . " kg<br>";
 $anjing->ubahJenis("Labrador");
@@ -108,7 +108,7 @@ echo "Berat: " . $kucing->getBerat() . " kg<br>";
 echo "Suara: " . $kucing->getSuara() . "<br>";
 echo "Warna: " . $kucing->getWarna() . "<br><br>";
 
-$kucing->tambahTinggi(5); // Menambah tinggi kucing
+$kucing->tambahTinggi(5); 
 echo "Setelah menambah tinggi: <br>";
 echo "Tinggi: " . $kucing->getTinggi() . " cm<br>";
 
