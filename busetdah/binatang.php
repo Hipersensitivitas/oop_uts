@@ -115,4 +115,4 @@ echo "Tinggi: " . $kucing->getTinggi() . " cm<br>";
 $kucing->ubahWarna("Putih");
 echo "Warna baru: " . $kucing->getWarna() . "<br><br>";
 
-?>
+
